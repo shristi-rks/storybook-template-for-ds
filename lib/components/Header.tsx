@@ -8,7 +8,7 @@ export interface HeaderProps {
 export const Header = (props: HeaderProps) => {
   const { type = 'default', text = ''} = props;
 
-  const headerClasses = ['header', `header--${type}`].join(' ');
+  const headerClasses = 'title-big'//['header', `header--${type}`].join(' ');
 
   return (
   <h1 className={headerClasses}>
