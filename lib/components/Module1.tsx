@@ -1,7 +1,7 @@
 import React from 'react';
 import TextSection, { TextSectionProps } from './TextSection';
 import Button, { ButtonProps } from './Button';
-import Logo, { LogoProps } from './Module1/Logo/Logo';
+import Logo, { LogoProps } from './Logo';
 import './Module1.css';
 
 interface Module1Props {

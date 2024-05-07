@@ -1,21 +1,24 @@
 import React from 'react';
 import TextSection, { TextSectionProps } from './TextSection';
 import Button, { ButtonProps } from './Button';
-//import Logo, { LogoProps } from './Module1/Logo/Logo';
+import Logo, { LogoProps } from './Logo';
 import './MyModule.css';
 
 interface MyModuleProps {
-  textSectionProps: TextSectionProps;
-  buttonProps: ButtonProps;
-  logoProps: LogoProps;
+    logoProps: LogoProps;
+    buttonProps: ButtonProps;
+    textSectionProps: TextSectionProps;
+  
+  
 }
 
 const MyModule: React.FC<MyModuleProps> = ({ textSectionProps, buttonProps, logoProps }) => {
   return (
     <div className="mymodule">
-      <TextSection {...textSectionProps} />
+        <Logo {...logoProps} />
       <Button {...buttonProps} />
-      <Logo {...logoProps} />
+      <TextSection {...textSectionProps} />
+      
     </div>
   );
 };

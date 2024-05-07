@@ -10,14 +10,14 @@ type Story = StoryObj<typeof TextSection>;
 
 export const Default: Story =  {
   args: {
-    title: 'Default Title',
-    content: 'Default content for the text section.',
+    title: 'Group 5',
+    content: 'Fun trying storybook for the first time',
   },
 };
 
 export const CustomText: Story =  {
   args: {
-    title: 'Custom Title',
-    content: 'Custom content for the text section.',
+    title: 'Group 5',
+    content: 'Fun trying storybook for the first time',
   },
 };
