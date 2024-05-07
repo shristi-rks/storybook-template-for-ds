@@ -2,17 +2,17 @@ import React from 'react';
 import TextSection, { TextSectionProps } from './TextSection';
 import Button, { ButtonProps } from './Button';
 import Logo, { LogoProps } from './MyModule/Logo/Logo';
-import './Module1.css';
+import './MyModule.css';
 
-interface Module1Props {
+interface MyModuleProps {
   textSectionProps: TextSectionProps;
   buttonProps: ButtonProps;
   logoProps: LogoProps;
 }
 
-const Module1: React.FC<Module1Props> = ({ textSectionProps, buttonProps, logoProps }) => {
+const MyModule: React.FC<MyModuleProps> = ({ textSectionProps, buttonProps, logoProps }) => {
   return (
-    <div className="module1">
+    <div className="mymodule">
       <TextSection {...textSectionProps} />
       <Button {...buttonProps} />
       <Logo {...logoProps} />
@@ -20,4 +20,4 @@ const Module1: React.FC<Module1Props> = ({ textSectionProps, buttonProps, logoPr
   );
 };
 
-export default Module1;
+export default MyModule;
